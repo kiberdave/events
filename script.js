@@ -47,6 +47,7 @@ categoryFilter.addEventListener(`change`, (e) => {
         }
     })
 })
+
 // -----------
 const geoSearch = document.querySelector(`#geoSearch`);
 const countryBox = document.querySelectorAll(`.country-box`);
@@ -75,3 +76,17 @@ faqList.addEventListener(`click`, (event) => {
     const faqItem = event.target.closest(`.faq-item`);
     faqItem.classList.toggle(`active`);
 })
+
+// დამატებითი
+const tabsMenu = document.querySelector(`#tabsMenu`);
+
+tabsMenu.addEventListener('click', (event) => {
+    const tabTrigger = event.target.closest(`.tab-trigger`);
+    if(!tabTrigger){ return }
+    const activeTab = document.querySelector(`.tab-trigger.is-selected`);
+    if(activeTab){
+        activeTab.classList.remove(`is-selected`);
+    }
+    tabTrigger.classList.add(`is-selected`);
+})
+// ----------
