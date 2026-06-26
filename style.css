@@ -59,3 +59,27 @@
   }
 
    /* ----------- */
+
+   .faq {
+    max-width: 500px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: 14px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 14px;
+  }
+
+  .faq-item.active .faq-answer {
+    display: block;
+  }

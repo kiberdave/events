@@ -67,3 +67,11 @@ geoSearch.addEventListener(`input`, (e) => {
 // -----------
 
 // 2
+const faqList = document.querySelector(`#faqList`);
+
+faqList.addEventListener(`click`, (event) => {
+    const faqQuestion = event.target.closest(`.faq-question`);
+    if(!faqQuestion){ return };
+    const faqItem = event.target.closest(`.faq-item`);
+    faqItem.classList.toggle(`active`);
+})
