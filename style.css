@@ -1,0 +1,61 @@
+.products {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+  }
+
+  .product {
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* დამატებითი */
+  .user-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 300px;
+  }
+  .user-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  /* ------ */
+
+  .products-list {
+    margin-top: 15px;
+    display: grid;
+    gap: 10px;
+    max-width: 300px;
+  }
+  
+  .shop-card {
+    padding: 12px;
+    border: 1px solid #777;
+    background-color: #f9f9f9;
+  }
+
+  /* ----------- */
+
+  .countries-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 250px;
+  }
+  
+  .country-box {
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #f0f4f8;
+    font-weight: bold;
+  }
+
+   /* ----------- */

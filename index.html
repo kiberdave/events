@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 1 -->
+    <h1>1</h1>
+    <input id="searchInput" type="text" placeholder="Search products...">
+
+    <div class="products">
+    <div class="product">Laptop</div>
+    <div class="product">Smartphone</div>
+    <div class="product">Headphones</div>
+    <div class="product">Keyboard</div>
+    <div class="product">Mouse</div>
+    </div>
+    
+    <br>
+    <br>
+
+    <!-- დამატებითი -->
+    <h1>დაბატებითი დავალება</h1>
+    <select id="statusFilter">
+        <option value="all">All Employees</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+    </select>
+
+    <div class="user-list">
+        <div class="user-card" data-status="online">Alexander (Online)</div>
+        <div class="user-card" data-status="offline">Maria (Offline)</div>
+        <div class="user-card" data-status="online">George (Online)</div>
+        <div class="user-card" data-status="offline">Elena (Offline)</div>
+    </div>
+    <!-- ---- -->
+     <select id="categoryFilter">
+        <option value="all">Show All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+    </select>
+
+    <div class="products-list">
+        <div class="shop-card" data-category="electronics">iPhone 15</div>
+        <div class="shop-card" data-category="clothing">Winter Jacket</div>
+        <div class="shop-card" data-category="electronics">Wireless Headphones</div>
+        <div class="shop-card" data-category="clothing">Running Shoes</div>
+    </div>
+    <!-- ---- -->
+     <br>
+     <br>
+     <input id="geoSearch" type="text" placeholder="Type country name...">
+
+    <div class="countries-wrapper">
+        <div class="country-box">Georgia</div>
+        <div class="country-box">Germany</div>
+        <div class="country-box">Ukraine</div>
+        <div class="country-box">France</div>
+        <div class="country-box">Italy</div>
+    </div>
+<!-- ---- -->
+    <br>
+    <br>
+    <!-- 2 -->
+    <h1>2</h1>
+    <script src="./script.js"></script>
+</body>
+</html>
